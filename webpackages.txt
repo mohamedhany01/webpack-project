@@ -1,0 +1,71 @@
+[Webpack]
+   npm i -D webpack webpack-cli
+
+[HTML]
+    html-webpack-plugin[plugin]
+        control with html template file
+    html-minimizer-webpack-plugin[plugin]
+        minize html template file
+
+    npm i -D html-webpack-plugin html-minimizer-webpack-plugin
+
+[CSS]
+    css-loader[loader]
+        Translates CSS into CommonJS
+    style-loader[loader]
+        Creates `style` nodes from JS strings
+    mini-css-extract-plugin[plugin]
+        extract css and save it in externel file
+    css-minimizer-webpack-plugin
+        minize css files
+    autoprefixer[package]
+        add prefixes to css "postcss-preset-env includes autoprefixer, so adding it separately is not necessary if you already use the preset."
+    postcss-loader[loader]
+        write modern css with confitance
+    postcss[package]
+        write modern css with confitance
+    postcss-preset-env[package]
+
+    npm i -D css-loader style-loader mini-css-extract-plugin postcss-loader postcss postcss-preset-env css-minimizer-webpack-plugin
+
+[SASS]
+    sass-loader[loader]
+        Compiles Sass to CSS
+    resolve-url-loader
+        Solve issues with url()
+    sass[package]
+
+    npm i -D sass-loader sass resolve-url-loader
+
+[JS]
+    terser-webpack-plugin[plugin]
+        minize js files
+    npm -i -D terser-webpack-plugin
+
+[Images]
+    npm -i -D image-minimizer-webpack-plugin imagemin @squoosh/lib
+
+    [lossless optimization]
+        npm -i -D imagemin-gifsicle imagemin-jpegtran imagemin-optipng imagemin-svgo
+    [lossy optimization]
+        npm -i -D imagemin-gifsicle imagemin-mozjpeg imagemin-pngquant imagemin-svgo
+
+[JSON]
+    json-minimizer-webpack-plugin[plugin]
+       minize jsons files
+
+       https://webpack.js.org/plugins/json-minimizer-webpack-plugin/
+       npm i -D json-minimizer-webpack-plugin
+[React]
+    npm i react react-dom
+
+    npm i -D @babel/core @babel/preset-env @babel/preset-react babel-loader
+
+[React Hot Replacment]
+   npm i -D  @pmmmwh/react-refresh-webpack-plugin react-refresh
+
+[Extra]
+   npm i -D @babel/runtime @babel/plugin-transform-runtime dotenv-webpack
+
+[Dev]
+    npm i -D webpack-dev-server
