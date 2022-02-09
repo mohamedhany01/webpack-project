@@ -51,9 +51,9 @@ module.exports = {
         ],
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        test: /\.(woff|woff2|eot|ttf|otf|svg)$/i,
         type: "asset/resource",
-        exclude: [path.resolve(__dirname, "./src/images")],
+        exclude: [path.resolve(__dirname, "../src/images")],
         generator: {
           filename: "fonts/[name].[contenthash][ext]",
         },
@@ -61,7 +61,7 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: "asset/resource",
-        exclude: [path.resolve(__dirname, "./src/fonts")],
+        exclude: [path.resolve(__dirname, "../src/fonts")],
         generator: {
           filename: "images/[name].[contenthash][ext]",
         },
